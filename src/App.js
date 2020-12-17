@@ -3,12 +3,11 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
+import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
+import FrontEnd from './components/pages/FrontEnd';
+import BackEnd from './components/pages/BackEnd';
+import DevOps from './components/pages/DevOps';
 
 function App() {
   return (
@@ -16,12 +15,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-        <Route path='/contact-us' component={ContactUs} />
-        <Route path='/sign-up' component={SignUp} />
-        <Route path='/marketing' component={Marketing} />
-        <Route path='/consulting' component={Consulting} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/frontEnd' component={FrontEnd} />
+        <Route path='/backEnd' component={BackEnd} />
+        <Route path='/devOps' component={DevOps} />
       </Switch>
     </Router>
   );

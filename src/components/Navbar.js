@@ -6,33 +6,15 @@ import Dropdown from './Dropdown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
 
   return (
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          EPIC
-          <i class='fab fa-firstdraft' />
+          Shane Benlolo
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -43,45 +25,49 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link
-              to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Services <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <Dropdown />}
-          </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/projects'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              Projects
             </Link>
           </li>
           <li className='nav-item'>
             <Link
-              to='/contact-us'
+              to='/frontEnd'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Contact Us
+              Front End
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/backEnd'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Back End
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/devOps'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              DevOps
             </Link>
           </li>
           <li>
             <Link
-              to='/sign-up'
+              to='/contact'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              Sign Up
+              Contact
             </Link>
           </li>
         </ul>

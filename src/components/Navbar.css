@@ -8,6 +8,7 @@
 }
 
 .navbar-logo {
+  width: 30%;
   color: #fff;
   justify-self: start;
   margin-left: 20px;
@@ -62,7 +63,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .NavbarItems {
     position: relative;
   }
