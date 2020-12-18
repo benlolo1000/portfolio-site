@@ -5,7 +5,6 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 .aboutMe,
 .projects,
 .contact {
@@ -19,12 +18,36 @@ body {
   padding: 5% 0;
 }
 
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /* Begin About Me */
 .title {
   text-align: center;
   font-size: 50px;
 }
-
 .avatar {
   width: auto;
   height: 300px;
@@ -32,21 +55,54 @@ body {
 /* End About Me */
 
 /* Begin Projects */
-.mockUp {
-  height: 50%;
-  width: 50%;
-}
-
 .projectHeader {
   font-size: 50px;
 }
-
+.mockUp {
+  height: 45%;
+  width: 45%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5%;
+}
 .projectDetails {
   display: flex;
 }
-
 .projDescription {
   font-size: 20px;
+  padding-bottom: 5%;
+}
+.projButtons {
+  display: flex;
+  justify-content: space-around;
+}
+.github {
+  background-color: red;
+}
+.github:hover {
+  background-color: darkred;
+}
+
+.github:active {
+  background-color: darkred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.demo {
+  background-color: blue;
+}
+.demo:hover {
+  background-color: darkblue;
+}
+
+.demo:active {
+  background-color: darkblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* End Projects */
