@@ -11,10 +11,10 @@ const projects = projectsList.projects
     <>
     {projects.map((projects)=>
       <div className='projects'>
-        <h1 className="projectHeader">{projects.name}</h1>
           <div className="projectDetails">
             <img className="mockUp" src={projects.mockUp} alt="SanFranTokyo"></img>
             <div className="right">
+            <h1 className="projectHeader">{projects.name}</h1>
               <p className="projDescription">{projects.desc}</p>
               <Buttons />
             </div>

@@ -5,7 +5,7 @@ export default {
         {
             name: "SanFranTokyo",
             mockUp: SanFranTokyo,
-            desc:  "SanFranTokyo is an online storefront created for a brick and mortar restaurant. Users can view, select, and purchase items from the storefront, as well as find basic info about the restaurant such as hours, and location."
+            desc:  "SanFranTokyo is an online storefront created for a brick and mortar restaurant. Users can view, select, and purchase items from the storefront, as well as find basic info about the restaurant such as hours and location."
         },
         {
             name: "Test",
