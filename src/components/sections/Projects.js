@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../App.css';
-import projectsList from '../projects/projectList'
+import '../../css/Projects.css';
+import projectsList from '../data/projectList'
 import Buttons from '../buttons/Buttons'
 
 export default function Projects() {
@@ -9,8 +9,9 @@ const projects = projectsList.projects
 
   return (
     <>
+    <div className='projects'>
+    <h1 className="projectsTitle">Projects</h1>
     {projects.map((projects)=>
-      <div className='projects'>
           <div className="projectDetails">
             <img className="mockUp" src={projects.mockUp} alt="SanFranTokyo"></img>
             <div className="right">
@@ -19,8 +20,8 @@ const projects = projectsList.projects
               <Buttons />
             </div>
           </div>
-      </div>
     )}
+    </div>
     </>
   )
 }

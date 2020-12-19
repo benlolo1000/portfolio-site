@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link} from 'react-scroll'
-import './Navbar.css';
+import React from 'react';
+import { Link } from 'react-scroll'
+import '../css/Navbar.css';
 
 function Navbar() {
   return (

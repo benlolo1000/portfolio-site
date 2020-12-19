@@ -1,0 +1,42 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f3f5;
+}
+.aboutMe,
+.projects,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #110b11;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: #5e8873;
+  color: #f0f3f5;
+  border: none;
+  box-shadow: 0px 5px 3px #bcbcbf;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #3a5548;
+}
+
+button:active {
+  background-color: #3a5548;
+  box-shadow: 0px 3px 2px #868688;
+  transform: translateY(4px);
+}

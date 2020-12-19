@@ -1,0 +1,30 @@
+.projectsTitle {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.projectHeader {
+  font-size: 30px;
+}
+.mockUp {
+  margin-top: 20px;
+  height: 50%;
+  width: 50%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5%;
+}
+.projectDetails {
+  text-align: left;
+  display: flex;
+}
+.projDescription {
+  font-size: 20px;
+  padding-bottom: 5%;
+}
+.projButtons {
+  display: flex;
+  justify-content: space-around;
+}
