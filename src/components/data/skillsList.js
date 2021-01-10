@@ -23,7 +23,7 @@ export default {
             name: "DevOps",
             statement: "I develop CI/CD pipelines, which make going from production to development a breeze",
             experience: "Static Web Pages, MicroServices, Fullstack Applications",
-            tools: "Docker, Terraform, Ansible, AWS, Bash Scripts, Github Actions"
+            tools: "Docker, Terraform, Ansible, AWS, Bash Scripts, Github Actions, Jira"
         },
 
     ]

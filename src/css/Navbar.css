@@ -11,22 +11,6 @@
   border-bottom: 3px solid #5e8873;
 }
 
-.navbar-logo {
-  width: 30%;
-  color: #f0f3f5;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .navbar-logo {
-    visibility: hidden;
-  }
-}
-
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
@@ -41,12 +25,6 @@
   margin-right: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar-menu {
-    justify-content: space-around;
-  }
-}
-
 .nav-item {
   display: flex;
   align-items: center;
@@ -54,8 +32,6 @@
 }
 
 .nav-item > .active {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #f0f3f5;
 }
 

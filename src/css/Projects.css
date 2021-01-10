@@ -17,8 +17,10 @@
   margin: 0 5%;
 }
 .projectDetails {
+  border-bottom: 1px dashed #110b119d;
   text-align: left;
   display: flex;
+  margin-bottom: 15px;
 }
 .projDescription {
   font-size: 20px;
