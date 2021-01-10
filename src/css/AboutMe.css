@@ -1,5 +1,5 @@
 .title {
-  margin-top: 8%;
+  margin-top: 150px;
   text-align: center;
   font-size: 40px;
   margin-bottom: 0px;
@@ -17,4 +17,18 @@
 .code-illustration {
   height: 30%;
   width: 30%;
+}
+
+@media only screen and (max-width: 410px) {
+  .title {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .code-illustration {
+    visibility: hidden;
+  }
+  .avatar {
+    margin-bottom: 0;
+  }
 }

@@ -30,3 +30,39 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 1000px) {
+  .projButtons {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .mockUp {
+    margin-top: 20px;
+    height: 80%;
+    width: 80%;
+  }
+  .projectDetails {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectHeader {
+    align-self: center;
+    text-align: center;
+    font-size: 50px;
+  }
+  .projDescription {
+    text-align: center;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .projButtons {
+    justify-content: space-around;
+  }
+}

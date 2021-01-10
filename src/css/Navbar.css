@@ -57,3 +57,9 @@
 .menu-icon {
   display: none;
 }
+
+@media only screen and (max-width: 410px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
